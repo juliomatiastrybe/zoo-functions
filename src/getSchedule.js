@@ -12,10 +12,10 @@ const filterSpeciesDay = (day) => {
   if (day === 'Monday') {
     return 'The zoo will be closed!';
   }
-  const arrSpecieByday = species
+  const arrSpecieByDay = species
     .filter((specie) => specie.availability.includes(day))
     .map((specie) => specie.name);
-  return arrSpecieByday;
+  return arrSpecieByDay;
 };
 
 const timeWeekAvailable = (dayWeek) => {
