@@ -32,7 +32,7 @@ const findEmployee = (object) => {
 const getEmployeesCoverage = (object = {}) => {
   if (Object.keys(object).length > 0) {
     const foundEmployee = findEmployee(object);
-    console.log(foundEmployee);
+    // console.log(foundEmployee);
     if (foundEmployee) {
       return createEmployeeInfo(foundEmployee);
     }

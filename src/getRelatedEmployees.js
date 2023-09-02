@@ -3,7 +3,7 @@ const data = require('../data/zoo_data');
 const { employees } = data;
 
 const getMenagersIds = [...new Set(employees.flatMap((employee) => employee.managers))];
-
+console.log(getMenagersIds);
 const createArrayMenagersForIds = getMenagersIds.map((id) => {
   const matchingMenager = employees.find((employee) => employee.id.includes(id));
   return {
